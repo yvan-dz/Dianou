@@ -1,7 +1,3 @@
-// Import Firebase modules
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
-
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDf4LJ5Zcv6vE3PC-ntJ7nXjrtXXyhFSy4",
@@ -14,8 +10,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 document.addEventListener('DOMContentLoaded', function () {
     const commentForm = document.getElementById('newCommentForm');
@@ -24,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load comments from Firestore
     async function loadComments() {
         try {
-            const querySnapshot = await getDocs(collection(db, "comments"));
+            const querySnapshot = await db.collection("comments").get();
             commentList.innerHTML = ''; // Clear existing comments
             querySnapshot.forEach((doc) => {
                 displayComment(doc.data());
@@ -64,13 +60,15 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         try {
-            await addDoc(collection(db, "comments"), newComment);
+            await db.collection("comments").add(newComment);
             displayComment(newComment); // Display the newly added comment
             commentForm.reset();
         } catch (e) {
             console.error("Error adding comment: ", e);
         }
     });
+
+    
 
     // Load comments on page load
     loadComments();
