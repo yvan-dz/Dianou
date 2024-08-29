@@ -68,7 +68,7 @@ body {
 }
 
 .hero .btn-primary {
-    background-color: #ff512f;
+    background-color: #cb3214;
     border: none;
     color: #ffffff;
     padding: 0.85rem 2.75rem;
@@ -343,8 +343,8 @@ body {
 }
 
 .contact-section .btn-success {
-    font-size: 1.3rem;
-    padding: 0.85rem 2.75rem;
+    font-size: 1rem; /* Reduced font size */
+    padding: 0.6rem 2rem; /* Reduced padding */
     border-radius: 50px;
     box-shadow: 0 10px 25px rgba(50, 205, 50, 0.5);
 }
@@ -427,9 +427,9 @@ footer a:hover {
 /* Additional WhatsApp Button Styling */
 .contact-form .btn-success {
     margin-top: 1rem;
-    padding: 0.85rem 2.75rem;
+    padding: 0.6rem 2rem; /* Reduced padding */
     border-radius: 50px;
-    font-size: 1.3rem;
+    font-size: 1rem; /* Reduced font size */
     text-align: center;
     box-shadow: 0 10px 25px rgba(50, 205, 50, 0.5);
     width: 100%;
