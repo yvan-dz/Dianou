@@ -67,50 +67,85 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section py-5 bg-gradient">
-        <div class="container" data-aos="fade-up">
-            <h2 class="text-center text-white" data-aos="fade-up">Nos Services</h2>
-            <div class="row mt-4">
-                <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
-                    <div class="service-card p-4 text-center bg-white rounded shadow">
-                        <a href="img/cake.jpg" data-lightbox="service-gallery" data-title="Cake Marbré">
-                            <img src="img/cake.jpg" alt="Cake Marbré" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                        </a>
-                        <h3>Cakes</h3>
-                        <p>Cake Marbré : 15€ <br> Cake au Yaourt : 13€</p>
+ <!-- Services Section -->
+<section id="services" class="services-section py-5 bg-gradient">
+    <div class="container" data-aos="fade-up">
+        <h2 class="text-center text-white" data-aos="fade-up">Nos Services</h2>
+        <div class="row mt-4">
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
+                <div class="service-card p-4 text-center bg-white rounded shadow">
+                    <a href="img/cake.jpg" data-lightbox="service-gallery" data-title="Cake Marbré">
+                        <img src="img/cake.jpg" alt="Cake Marbré" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                    </a>
+                    <h3>Cakes</h3>
+                    <p>Cake Marbré : 15€ <br> Cake au Yaourt : 13€</p>
+                    <div class="button-container mt-3">
+                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
-                    <div class="service-card p-4 text-center bg-white rounded shadow">
-                        <a href="img/beignets.jpg" data-lightbox="service-gallery" data-title="Beignets">
-                            <img src="img/beignets.jpg" alt="Beignets" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                        </a>
-                        <h3>Beignets</h3>
-                        <p>10 pièces : 5€</p>
+            </div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
+                <div class="service-card p-4 text-center bg-white rounded shadow">
+                    <a href="img/beignets.jpg" data-lightbox="service-gallery" data-title="Beignets">
+                        <img src="img/beignets.jpg" alt="Beignets" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                    </a>
+                    <h3>Beignets</h3>
+                    <p>10 pièces : 5€</p>
+                    <div class="button-container mt-3">
+                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
-                    <div class="service-card p-4 text-center bg-white rounded shadow">
-                        <a href="img/pilis.jpg" data-lightbox="service-gallery" data-title="Pastels">
-                            <img src="img/pilis.jpg" alt="Pastels" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                        </a>
-                        <h3>Pastels (Pili Pili)</h3>
-                        <p>5 pièces : 10€</p>
+            </div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
+                <div class="service-card p-4 text-center bg-white rounded shadow">
+                    <a href="img/pilis.jpg" data-lightbox="service-gallery" data-title="Pastels">
+                        <img src="img/pilis.jpg" alt="Pastels" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                    </a>
+                    <h3>Pastels (Pili Pili)</h3>
+                    <p>À la viande 5 à 10€ <br>Au poisson 4 à 10€</p>
+                    <div class="button-container mt-3">
+                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
                     </div>
                 </div>
-                <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
-                    <div class="service-card p-4 text-center bg-white rounded shadow">
-                        <a href="img/croquettes.jpg" data-lightbox="service-gallery" data-title="Croquettes">
-                            <img src="img/croquettes.jpg" alt="Croquettes" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                        </a>
-                        <h3>Croquettes</h3>
-                        <p>200g : 5€ <br> 500g : 12€ <br> 1kg : 23€</p>
+            </div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
+                <div class="service-card p-4 text-center bg-white rounded shadow">
+                    <a href="img/croquettes.jpg" data-lightbox="service-gallery" data-title="Croquettes">
+                        <img src="img/croquettes.jpg" alt="Croquettes" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                    </a>
+                    <h3>Croquettes</h3>
+                    <p>200g : 5€ <br> 500g : 12€ <br> 1kg : 23€</p>
+                    <div class="button-container mt-3">
+                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+<!-- Modal pour afficher le message d'erreur de PayPal -->
+<div class="modal fade" id="paypalInfoModal" tabindex="-1" aria-labelledby="paypalInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: linear-gradient(135deg, #ff512f, #f09819); color: #fff; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="paypalInfoModalLabel" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #fff; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">Service PayPal actuellement Indisponible</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #fff; border-radius: 50%;"></button>
+            </div>
+            <div class="modal-body" style="font-size: 1.1rem; line-height: 1.7;">
+                Service PayPal indisponible pour le moment depuis la page. Veuillez payer depuis votre PayPal vers mon PayPal : <strong>dianasimo09@gmail.com</strong>.
+                <br><br>
+                Merci de faire confiance aux saveurs de Dianou ❤️.
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #555; border-radius: 50px; padding: 0.5rem 1.5rem; transition: background-color 0.3s ease;">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section py-5">
@@ -158,14 +193,14 @@
                         <div class="testimonial-item text-center" data-aos="zoom-in" data-aos-delay="100">
                             <img src="img/temoin2.jpg" alt="Image de Témoignage" class="img-fluid rounded shadow mb-3" style="max-width: 150px;">
                             <p class="lead">"Mama c'est bon et c'est beaucoup !."</p>
-                            <span>- Lucresse</span>
+                            <span>- Lucrèce</span>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial-item text-center" data-aos="zoom-in" data-aos-delay="200">
                             <img src="img/temoin3.jpg" alt="Image de Témoignage" class="img-fluid rounded shadow mb-3" style="max-width: 150px;">
                             <p class="lead">"C'est la magie !."</p>
-                            <span>- Bastianne</span>
+                            <span>- Bastiane</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +288,7 @@
     <footer class="py-4 bg-dark text-white text-center" data-aos="fade-up">
         <div class="container">
             <p>&copy; 2024 Les saveurs de Dianou. Tous droits réservés.</p>
-            <p>Conçu par <a href="https://github.com/yvan-dz" target="_blank">Yvan Dzefak</a></p>
+            <p>Conçu par <a href="https://websnape.de/" target="_blank">WebSnape by Yvan</a></p>
         </div>
     </footer>
 

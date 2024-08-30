@@ -73,3 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load comments on page load
     loadComments();
 });
+
+
+function showPaypalInfo() {
+    var paypalModal = new bootstrap.Modal(document.getElementById('paypalInfoModal'));
+    paypalModal.show();
+}
