@@ -456,3 +456,22 @@ footer a:hover {
     background-color: #28a745;
     transform: translateY(-7px);
 }
+
+
+
+.text-center a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.text-center a img {
+    border: none; /* Supprime toute bordure autour des images */
+    display: inline-block; /* Assure que l'image ne prend pas de place excessive */
+    vertical-align: middle; /* Aligne correctement les images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.text-center a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

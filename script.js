@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
             await db.collection("comments").add(newComment);
             displayComment(newComment); // Display the newly added comment
             commentForm.reset();
-            ratingSelect.value = 5; // Reset the rating to 5 stars after form submission
         } catch (e) {
             console.error("Error adding comment: ", e);
         }
