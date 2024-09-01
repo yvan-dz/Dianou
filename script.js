@@ -76,6 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function showPaypalInfo() {
-    var paypalModal = new bootstrap.Modal(document.getElementById('paypalInfoModal'));
-    paypalModal.show();
+    window.open('https://www.paypal.me/Leticiadiane755', '_blank');
 }
+

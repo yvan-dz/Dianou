@@ -67,74 +67,76 @@
         </div>
     </section>
 
- <!-- Services Section -->
-<section id="services" class="services-section py-5 bg-gradient">
-    <div class="container" data-aos="fade-up">
-        <h2 class="text-center text-white" data-aos="fade-up">Nos Services</h2>
-        <div class="row mt-4">
-            <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
-                <div class="service-card p-4 text-center bg-white rounded shadow">
-                    <a href="img/cake.jpg" data-lightbox="service-gallery" data-title="Cake Marbré">
-                        <img src="img/cake.jpg" alt="Cake Marbré" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                    </a>
-                    <h3>Cakes</h3>
-                    <p>Cake Marbré : 15€ <br> Cake au Yaourt : 13€</p>
-                    <div class="button-container mt-3">
-                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5 bg-gradient">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center text-white" data-aos="fade-up">Nos Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-card p-4 text-center bg-white rounded shadow">
+                        <a href="img/cake.jpg" data-lightbox="service-gallery" data-title="Cake Marbré">
+                            <img src="img/cake.jpg" alt="Cake Marbré" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                        </a>
+                        <h3>Cakes</h3>
+                        <p>Cake Marbré : 15€ <br> Cake au Yaourt : 13€</p>
+                        <div class="button-container mt-3">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paypalInfoModal">Payer avec PayPal</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
-                <div class="service-card p-4 text-center bg-white rounded shadow">
-                    <a href="img/beignets.jpg" data-lightbox="service-gallery" data-title="Beignets">
-                        <img src="img/beignets.jpg" alt="Beignets" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                    </a>
-                    <h3>Beignets</h3>
-                    <p>10 pièces : 5€</p>
-                    <div class="button-container mt-3">
-                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-card p-4 text-center bg-white rounded shadow">
+                        <a href="img/beignets.jpg" data-lightbox="service-gallery" data-title="Beignets">
+                            <img src="img/beignets.jpg" alt="Beignets" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                        </a>
+                        <h3>Beignets</h3>
+                        <p>10 pièces : 5€</p>
+                        <div class="button-container mt-3">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paypalInfoModal">Payer avec PayPal</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
-                <div class="service-card p-4 text-center bg-white rounded shadow">
-                    <a href="img/pilis.jpg" data-lightbox="service-gallery" data-title="Pastels">
-                        <img src="img/pilis.jpg" alt="Pastels" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                    </a>
-                    <h3>Pastels (Pili Pili)</h3>
-                    <p>À la viande 5 à 10€ <br>Au poisson 4 à 10€</p>
-                    <div class="button-container mt-3">
-                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-card p-4 text-center bg-white rounded shadow">
+                        <a href="img/pilis.jpg" data-lightbox="service-gallery" data-title="Pastels">
+                            <img src="img/pilis.jpg" alt="Pastels" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                        </a>
+                        <h3>Pastels (Pili Pili)</h3>
+                        <p>À la viande 5 à 10€ <br>Au poisson 4 à 10€</p>
+                        <div class="button-container mt-3">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paypalInfoModal">Payer avec PayPal</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
-                <div class="service-card p-4 text-center bg-white rounded shadow">
-                    <a href="img/croquettes.jpg" data-lightbox="service-gallery" data-title="Croquettes">
-                        <img src="img/croquettes.jpg" alt="Croquettes" class="img-fluid mb-3 rounded" style="max-width: 80%;">
-                    </a>
-                    <h3>Croquettes</h3>
-                    <p>200g : 5€ <br> 500g : 12€ <br> 1kg : 23€</p>
-                    <div class="button-container mt-3">
-                        <button class="btn btn-primary" onclick="showPaypalInfo()">Payer avec PayPal</button>
+                <div class="col-md-3" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-card p-4 text-center bg-white rounded shadow">
+                        <a href="img/croquettes.jpg" data-lightbox="service-gallery" data-title="Croquettes">
+                            <img src="img/croquettes.jpg" alt="Croquettes" class="img-fluid mb-3 rounded" style="max-width: 80%;">
+                        </a>
+                        <h3>Croquettes</h3>
+                        <p>200g : 5€ <br> 500g : 12€ <br> 1kg : 23€</p>
+                        <div class="button-container mt-3">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paypalInfoModal">Payer avec PayPal</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- Modal pour afficher le message d'erreur de PayPal -->
+   <!-- Remplacer le contenu de la modal par un lien direct vers PayPal.Me -->
 <div class="modal fade" id="paypalInfoModal" tabindex="-1" aria-labelledby="paypalInfoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" style="background: linear-gradient(135deg, #ff512f, #f09819); color: #fff; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
             <div class="modal-header border-0">
-                <h5 class="modal-title" id="paypalInfoModalLabel" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #fff; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">Service PayPal actuellement Indisponible</h5>
+                <h5 class="modal-title" id="paypalInfoModalLabel" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #fff; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">Payez via PayPal</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #fff; border-radius: 50%;"></button>
             </div>
             <div class="modal-body" style="font-size: 1.1rem; line-height: 1.7;">
-                Service PayPal indisponible pour le moment depuis la page. Veuillez payer depuis votre PayPal vers mon PayPal : <strong>dianasimo09@gmail.com</strong>.
+                Cliquez sur le bouton ci-dessous pour être redirigé vers PayPal où vous pourrez saisir le montant de votre choix.<br> Veillez aussi mettre en commentaire votre nom et le delice que vous souhaitez acheter 🤗.
+                <br><br>
+                <a href="https://www.paypal.me/Leticiadiane755" target="_blank" class="btn btn-primary">Payer avec PayPal</a>
                 <br><br>
                 Merci de faire confiance aux saveurs de Dianou ❤️.
             </div>
@@ -144,6 +146,7 @@
         </div>
     </div>
 </div>
+
 
 
 
